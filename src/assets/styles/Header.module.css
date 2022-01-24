@@ -1,0 +1,135 @@
+.header{
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+}
+.contentHeader{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+.header .logoSVG{
+    width: 130px;
+    height: 40px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    height: 100%;
+    font-weight: 600;
+    color: black;
+}
+
+.nav a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    height: 100%;
+    border-bottom: 2px transparent solid;
+}
+
+.nav a:hover{
+    border-bottom: 2px #30a1fd solid;
+}
+.nav a:active{
+    color: #30a1fd;
+}
+.nav button{
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background: #30a1fd;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.nav button:hover{
+    background:#278bdd;
+}
+
+.nick{
+    font-weight: 600;
+    margin: 0 20px;
+}
+
+.user{
+    
+    color: white;
+}
+.user img{
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px blue solid;
+}
+.panel{
+    top: 59px;
+    right: 10px;
+    position: absolute;
+    width: 200px;
+    height: 290px;
+    border-radius: 10px;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.panel ul{
+    list-style: none;
+    padding-top: 10px;
+}
+.panel ul li{
+    font-size: 16px;
+    padding-left: 20px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    color: #194d77;
+}
+.panel ul li:hover{
+    background: #e9f5ff;
+}
+.panel ul .logoutLI{
+    color: red;
+}
+.signBtn button{
+    margin: 0 10px;
+    transition: 0.2s;
+}
+.signBtn button:nth-child(2){
+    font-size: 17px;
+    padding: 4px 16px;
+    background: #278bdd;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.signBtn button:nth-child(2):hover{
+    background: #196cb1;
+}
+
+.signBtn button:nth-child(1){
+    font-size: 17px;
+    padding: 5px 16px;
+    background: transparent;
+    border-radius: 7px;
+    border: none;
+    color: rgb(114, 40, 199);
+    cursor: pointer;
+}
+
+.signBtn button:nth-child(1):hover{
+    background: #cce3f5;
+}

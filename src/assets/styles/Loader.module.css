@@ -1,0 +1,44 @@
+.profileLoaderContent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.profileLoader {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+.profileLoader div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #30a1fd;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #30a1fd transparent transparent transparent;
+}
+.profileLoader div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.profileLoader div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.profileLoader div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
